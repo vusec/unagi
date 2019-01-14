@@ -1,0 +1,121 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DigraphActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!-- 
+	    <TextView android:id="@+id/name_text"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/name" />
+	     -->
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+	    <EditText android:id="@+id/name_message"
+	        android:layout_weight="1"
+	        android:layout_width="0dp"
+      		android:textSize="10dp"
+	        android:layout_height="30dp"
+	        android:hint="@string/name_message"
+	        android:imeOptions="flagNoExtractUi"
+	         />
+	    <TextView android:id="@+id/counter"
+	        android:layout_width="50dp"
+	        android:layout_height="30dp"
+    		android:gravity="center"
+	        android:text="@string/counter"
+	        />
+	    <Button
+	        android:layout_width="wrap_content"
+	        android:layout_height="30dp"
+      		android:textSize="10dp"
+	        android:text="@string/reset_data"
+	        android:onClick="resetDataToSend" />
+	    <Button
+	        android:layout_width="wrap_content"
+	        android:layout_height="30dp"
+      		android:textSize="10dp"
+	        android:text="@string/reset_counter"
+	        android:onClick="resetCounter" />
+	    <Button
+	        android:layout_width="wrap_content"
+	        android:layout_height="30dp"
+      		android:textSize="10dp"
+	        android:text="@string/hide_keyboard"
+	        android:onClick="hideKeyboard" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+	    <!-- 
+	    <TextView android:id="@+id/command_text"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/command" />
+	    -->
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+	    <EditText android:id="@+id/edit_message"
+	        android:layout_weight="1"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:hint="@string/edit_message"
+	        android:imeOptions="flagNoExtractUi"
+	         />
+	    <Button
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/button_send"
+	        android:onClick="sendMessage" />
+	    <Button
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/button_reset"
+	        android:onClick="resetMessage" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+	    <Button
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/button_sendall"
+	        android:onClick="sendAll" />
+	    
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content">
+	    </LinearLayout>
+        
+	    <TextView android:id="@+id/sensor_time_text"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/sensor_time" />
+	    <TextView android:id="@+id/left"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="" />
+	    <TextView android:id="@+id/sensor_data_a_text"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/sensor_data_a" />
+	    <TextView android:id="@+id/sensor_data_g_text"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/sensor_data_g" />
+    </LinearLayout>
+    
+</LinearLayout>
